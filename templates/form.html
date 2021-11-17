@@ -1,4 +1,8 @@
-{% load static %}
+{{ form.as_p }}
+
+samsjaskß
+
+<!-- {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +45,7 @@
 
         <section class="main-sec">
             <h1>File for a Missing Person</h1>
-            <form>
+            <form method="POST">
                 <div class="row">
                     <div class="form-item">
                         <label for="firstName">Missing Person’s First Name</label>
@@ -73,8 +77,8 @@
                     </div>
 
                     <div class="form-item">
-                        <label for="alsoKnown">Also Known as</label>
-                        <input type="text" id="alsoKnown" placeholder="Enter their nick name">
+                        <label for="age">Age</label>
+                        <input type="text" id="age" placeholder="Enter their age range">
                     </div>
                 </div>
 
@@ -107,10 +111,9 @@
                         <p>(Max 4 photos)</p>
                     </div>
                 </div>
-            </form>
 
-            <h1>Last Known Location</h1>
-            <form>
+                <h1>Last Known Location</h1>
+
                 <div class="row">
                     <div class="form-item">
                         <label for="address">Address</label>
@@ -137,7 +140,7 @@
 
             <h1>Contact Person</h1>
             <p class="subheading">This should be the contact of the person that should be reached in case of questions or when the missing has been found</p>
-            <form>
+
                 <div class="row">
                     <div class="form-item">
                         <label for="contactName">Contact Name</label>
@@ -161,10 +164,13 @@
                         <input type="text" id="address" placeholder="Enter your address and name of street">
                     </div>
                 </div>
+                <button type="reset" class="btn">Cancel</button>
+                <button type="submit" class="btn-continue">Continue</button>
             </form>
-            <button class="btn">Cancel</button>
-            <button class="btn-continue">Continue</button>
         </section>
     </main>
 </body>
 </html>
+ -->
+
+{{form}}

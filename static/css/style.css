@@ -40,6 +40,13 @@ main {
     display: flex;
 }
 
+@media (max-width: 576px) {
+    main {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 /* sidebar */
 aside {
     background-color: var(--primary);
@@ -69,6 +76,17 @@ aside li {
     margin-top: 1rem;
 }
 
+@media (max-width: 576px) {
+    aside {
+        display: none;
+    }
+
+    .main-sec {
+        /* margin: 2rem 0 0 3rem; */
+        width: 70%;
+    }
+}
+
 /* form  */
 form {
     margin-top: 3rem;
@@ -79,6 +97,17 @@ form {
     justify-content: space-between;
     width: 100%;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+    .row {
+        flex-direction: column;
+    }
+
+    form {
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .form-item {
