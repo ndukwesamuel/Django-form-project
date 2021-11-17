@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +10,157 @@
     --primary: #F2545B;
     --white: #ffffff;
     --font-color: #2E2E2E;
+    --placeholder: #A1A7C4;
 }
 
 body {
     background: var(--white);
     color: var(--font-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px;
+}
+
+nav,
+.nav-content {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+}
+
+/* sidebar */
+aside {
+    background-color: var(--primary);
+    font-size: 14px;
+    padding: 0 3rem;
+    width: 20%;
+}
+
+aside li {
+    margin: 2.5rem auto;
+    color: white;
+    list-style: none;
+}
+
+.logout {
+    margin-top: 17rem;
+    margin-bottom: 3rem;
+}
+
+.main-sec {
+    margin: 2rem 0 0 3rem;
+    width: 70%;
+}
+
+.main-sec h1 {
+    font-size: 24px;
+    margin-top: 1rem;
+}
+
+/* form  */
+form {
+    margin-top: 3rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-item {
+    flex-basis: 40%;
+}
+
+.form-item label,
+.form-item input {
+    display: block;
+}
+
+.form-item label {
+    font-size: 14px;
+}
+
+.form-item input {
+    padding: 1rem 16rem 1rem 1rem;
+    outline: none;
+    border: 1px solid var(--placeholder);
+    border-radius: 4px 4px 4px 4px;
+}
+
+.form-item input::placeholder {
+    color: var(--placeholder);
+    font-size: 14px;
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid var(--placeholder);
+    border-radius: 4px 4px 4px 4px;
+    color: var(--primary);
+    padding: 2px;
+    font-size: 14px;
+    justify-content: space-around;
+    width: 120px;
+    margin: 0 3px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px dotted var(--placeholder);
+    border-radius: 4px 4px 4px 4px;
+    padding: 5rem 2px;
+}
+
+.icons p {
+    font-size: 14px;
+}
+
+.iconz {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+
+.btn {
+    padding: 0.75rem 5rem;
+    border: 1px solid var(--primary);
+    border-radius: 4px 4px 4px 4px;
+    background: var(--white);
+    margin-top: 2rem;
+}
+
+.btn-continue {
+    padding: 0.75rem 5rem;
+    border-radius: 4px 4px 4px 4px;
+    background: var(--primary);
+    border: none;
+    color: var(--white);
+    margin-top: 1rem;
+}
+
+.subheading {
+    font-size: 16px;
+    font-weight: 200;
+    margin: 1rem 0;
 }
