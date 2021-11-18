@@ -1,3 +1,8 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <form method="POST" enctype="multipart/form-data">
   
     <!-- Security token -->
@@ -8,3 +13,174 @@
       
     <input type="submit" value="Submit">
 </form>
+
+
+
+<!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <h1>LOGO</h1>
+            </div>
+
+            <div class="nav-content">
+                <input type="text" name="search">
+                <span class="material-icons">
+                    notifications
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <ul>
+                <li>Dashboard</li>
+                <li>Create and event</li>
+                <li>Report</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+                <li>Account Settings</li>
+                <li class="logout">Logout</li>
+            </ul>
+        </aside>
+
+        <section class="main-sec">
+            <h1>File for a Missing Person</h1>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="form-item">
+                        <label for="firstName">Missing Person’s First Name</label>
+                        <input type="text" id="firstName" name="first_name" placeholder="Enter their first name">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="lastName">Missing Person’s Last Name</label>
+                        <input type="text" id="lastName" name="last_name" placeholder="Enter their last name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-item">
+                        <label for="otherName">Other Names</label>
+                        <input type="text" id="otherName" name="other_names" placeholder="Enter their other name">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="alsoName">Also Known as</label>
+                        <input type="text" id="alsoName" name="a_k_a" placeholder="Enter their nick name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-item">
+                        <label for="sex">Sex</label>
+                        <select id="sex" name="sex">
+                            <option value selected>Enter their sex</option>
+                            <option value="m">male</option>
+                            <option value="f">female</option>
+                        </select>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="age">Age</label>
+                        <input type="text" id="age" name="age" placeholder="Enter their age range">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-item">
+                        <label for="height">Height</label>
+                        <input type="text" id="height" name="height" placeholder="Select approximate height">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="alsoKnown">Date Declared Missing</label>
+                        <input type="text" id="alsoKnown" name="date_declared_missing" placeholder="dd / mm / yyyy">
+                    </div>
+                </div>
+
+                <div class="form-area">
+                    <label for="upload">Images</label>
+                    <label  for="image_upload" class="icon">
+                        <div class="material-icons">
+                            cloud_upload
+                        </div>
+                        <p>Upload File</p>
+                    </label>
+                    
+                    <input style="display: none;" type="file" id="image_upload" name="image_upload">
+                </div>
+
+                <h1>Last Known Location</h1>
+
+                <div class="row">
+                    <div class="form-item">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="last_known_address" placeholder="Enter house number and name of street">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="area">Area</label>
+                        <input type="text" id="area" name="area" placeholder="Enter a Landmark and name of street">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-item">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="Enter name of city">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="Choose state">
+                    </div>
+                </div>
+
+                <h1>Contact Person</h1>
+                <p class="subheading">This should be the contact of the person that should be reached in case of questions or when the missing has been found</p>
+
+                <div class="row">
+                    <div class="form-item">
+                        <label for="contactName">Contact Name</label>
+                        <input type="text" id="contactName" name="contact_name" placeholder="Enter full Name of contact person">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="address">Phone Number</label>
+                        <input type="text" id="address" name="phone_number" placeholder="Enter phone number">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-item">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="contact_person_email" placeholder="Enter email address">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="contact_person_address" placeholder="Enter your address and name of street">
+                    </div>
+                </div>
+                <button type="reset" class="btn">Cancel</button>
+                <button type="submit" class="btn-continue">Continue</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html> -->

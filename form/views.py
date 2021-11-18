@@ -13,6 +13,7 @@ def get_form(request):
     form = myModelForm(request.POST or None)
     if form.is_valid():
         form.save()
+        print(form)
 
     context =  {'form':form}
     return render(request, 'test.html',context )

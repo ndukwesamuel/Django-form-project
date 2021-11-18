@@ -1,8 +1,8 @@
+<!-- {% load static %} -->
 {{ form.as_p }}
 
-samsjaskß
 
-<!-- {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,48 +49,48 @@ samsjaskß
                 <div class="row">
                     <div class="form-item">
                         <label for="firstName">Missing Person’s First Name</label>
-                        <input type="text" id="firstName" placeholder="Enter their first name">
+                        <input type="text" id="firstName" name="first_name" placeholder="Enter their first name">
                     </div>
 
                     <div class="form-item">
                         <label for="lastName">Missing Person’s Last Name</label>
-                        <input type="text" id="lastName" placeholder="Enter their last name">
+                        <input type="text" id="lastName" name="last_name" placeholder="Enter their last name">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="form-item">
                         <label for="otherName">Other Names</label>
-                        <input type="text" id="otherName" placeholder="Enter their other name">
+                        <input type="text" id="otherName" name="other_names" placeholder="Enter their other name">
                     </div>
 
                     <div class="form-item">
                         <label for="alsoName">Also Known as</label>
-                        <input type="text" id="alsoName" placeholder="Enter their nick name">
+                        <input type="text" id="alsoName" name="a_k_a" placeholder="Enter their nick name">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="form-item">
                         <label for="sex">Sex</label>
-                        <input type="text" id="sex" placeholder="Enter their other name">
+                        <input type="text" id="sex" name="sex" placeholder="Enter their other name">
                     </div>
 
                     <div class="form-item">
                         <label for="age">Age</label>
-                        <input type="text" id="age" placeholder="Enter their age range">
+                        <input type="text" id="age" name="age" placeholder="Enter their age range">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="form-item">
                         <label for="height">Height</label>
-                        <input type="text" id="height" placeholder="Select approximate height">
+                        <input type="text" id="height" name="height" placeholder="Select approximate height">
                     </div>
 
                     <div class="form-item">
-                        <label for="alsoKnown">Date Declared Missing</label>
-                        <input type="text" id="alsoKnown" placeholder="dd / mm / yyyy">
+                        <label for="date_missing">Date Declared Missing</label>
+                        <input type="text" id="date_missing" name="date_declared_missing" placeholder="dd / mm / yyyy">
                     </div>
                 </div>
 
@@ -98,7 +98,7 @@ samsjaskß
                     <label for="upload">Images</label>
                     <div class="icons">
                         <div class="iconz">
-                            <button class="icon">
+                            <button name="image_upload" class="icon">
                                 <div class="material-icons">
                                     cloud_upload
                                 </div>
@@ -171,6 +171,3 @@ samsjaskß
     </main>
 </body>
 </html>
- -->
-
-{{form}}
