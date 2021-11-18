@@ -1,0 +1,44 @@
+https://icons8.com/icons/set/git
+..
+
+npm i -g create-react-app
+
+
+create a Newfolder  or in dex or doc
+
+inside the folder do:  npx create-react-app name_of_app
+this will create a new react project for you.
+
+
+
+cd to the react folder
+
+C:\Users\user\Desktop\frontend\my-app> npm start
+
+
+
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
