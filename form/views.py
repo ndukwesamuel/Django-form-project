@@ -1,7 +1,7 @@
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
-from .forms import myModelForm
+from .forms import myModelForm #youModelForm
 
 def form(request):
 
@@ -9,12 +9,24 @@ def form(request):
 
 
 
-def get_form(request):
-    form = myModelForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-        print(form)
 
-    context =  {'form':form}
-    return render(request, 'test.html',context )
+# def get_form(request):
+#     form = myModelForm(request.POST or None)
+#     if form.is_valid():
+#         form.save()
+#         return redirect('/')
+#     context = {"form": form}
+#     return render(request, 'test.html', context)
+# this did not work for me so i had to createthe next function
+            
+def your(request):
+    form = myModelForm(request.POST or None)
+    print('nice')
+    if form.is_valid():
+        print('not nice')
+        form.save()
+        print('greate')
+        return redirect('/')
+    context = {"form": form}
+    return render(request, 'test.html', context)
             
