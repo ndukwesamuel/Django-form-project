@@ -7,8 +7,13 @@ from .models import *
 
 
 
-class myModelForm(forms.ModelForm):
+class myModelForm(ModelForm):
     class Meta:
         model= myModel
         fields= '__all__'
 
+
+# class youModelForm(ModelForm):
+#     class Meta:
+#         model= youModel
+#         fields= '__all__'

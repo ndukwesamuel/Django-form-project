@@ -5,3 +5,4 @@ from django.contrib import admin
 from .models import *
 
 admin.site.register(myModel)
+admin.site.register(youModel)
